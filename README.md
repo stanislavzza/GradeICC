@@ -29,7 +29,7 @@ grades. The file must be a comma-separated data file with three columns:
 Student | Subject | Points
 ------- | --------|-------
 12334   | BIO     | 4
-12335   | BIO     | 3
+12334   | BIO     | 3
 12336   | MAT     | 3
 12337   | ART     | 2
 
