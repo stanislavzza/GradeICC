@@ -8,12 +8,13 @@ two digit CIP code to aggregate at that level. Or, if comparing institutions, yo
 
 The folder structure expected by the code is: 
 
-> /Top folder
->      get_icc.R
->      /code
->            stats.R
->      /data
->            grades.csv
+``` /Top folder
+      get_icc.R
+      /code
+            stats.R
+      /data
+            grades.csv
+```
 
 Then just run get_icc.R (best way is to create a project in the top folder with Rstudio, open the file, highlight it all and run). 
 The code requires that the tidyverse library be loaded with install.packages("tidyverse").
