@@ -22,11 +22,16 @@ The code requires that the tidyverse library be loaded with install.packages("ti
 The grades.csv file can be any numeric data that you want to calculate ICC from (like rubric ratings), but the column names are suggestive for
 grades. The file must be a comma-separated data file with three columns:
 
-Student: a unique identifier for each subject being rated, assumed to be a student for grades.
+* Student: a unique identifier for each subject being rated, assumed to be a student for grades.
+* Subject: a unique identifier for each group within the data that you want an independent ICC for.
+* Points: a numerical rating or other comparative value. If grades, must be grade points, not letters. 
 
-Subject: a unique identifier for each group within the data that you want an independent ICC for.
+Student | Subject | Points
+------- | --------|-------
+12334   | BIO     | 4
+12335   | BIO     | 3
+12336   | MAT     | 3
+12337   | ART     | 2
 
-Points: a numerical rating or other comparative value. If grades, must be grade points, not letters. 
 
-There are several options for running the ICCs, and the get_icc.R uses some of them. You can find out more by reading the included documentation. It's possible
-to create an R package using Roxygen for documentation.
+There are several options for running the ICCs, and the get_icc.R uses some of them. You can find out more by reading the included documentation. It's possible to create an R package using Roxygen for documentation.
